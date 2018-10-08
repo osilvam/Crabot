@@ -1,0 +1,138 @@
+/*@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}*/
+body { 
+	background-image: url("../img/background.png");
+	color: lightgray;
+}
+
+h1 {
+	padding: 10px;
+	font-size: 40px;
+	font-style: oblique;
+}
+h2 {
+	padding: 5px;
+	font-size: 25px;
+	font-style: oblique;
+}
+table {
+	text-align: left;
+	margin: 10px;
+}
+td {
+	padding: 5px;
+	
+}
+th {
+	color: rgb(160,160,160);
+	border-bottom: 1px solid rgba(200,200,200,0.05); /**/
+	padding: 5px;
+}
+
+/* MENU */
+#menu_table {
+	margin-left: 25%;
+}
+#menu {
+	background: rgba(0,0,0,0.5);
+	width: 90%;
+	margin: auto; /**/
+	text-align: center;
+	padding: 10px;
+}
+/*#menu_informacio {
+	/*width: 40%;
+	text-align: left;
+	/*float: right;	*/
+/*}*/
+#menu_configuracion {
+	/*display: none;
+	/*width: 40%;
+	/*text-align: left;*/
+	/*margin-left: 25%;*/
+}
+#boton_deslizante {
+	cursor: pointer;
+}
+.sub_menu_table th {
+	font-weight: bold;
+	font-style: oblique;
+}
+.columna_sub_table {
+	border: 1px solid rgba(100,100,100,0.2);
+	cursor: pointer;
+}
+.columna_sub_table:hover {
+	color: rgb(0,190,255);
+}
+
+/* DIV */
+#contenedor {
+    display: block;
+    margin: auto; /**/
+	width: 90%;
+}
+.video-stream {
+	float: left;
+	width: 50%;
+	/*display: none;
+    /*position:absolute;
+    width: 64%;
+    margin-left: 22.5%;*/
+}
+#controlador {
+	/*background: url(../img/div-center.png) no-repeat center;/**/
+	background-size: contain;
+	width: 100%;
+	float: left;
+	padding-top: 1%;
+}
+
+/* CANVAS */
+#div_canvas_0 {
+	background: url(../img/div-left.png) no-repeat right;
+	background-size: contain;
+	float: left;
+}
+#div_canvas_1 {
+	background: url(../img/div-right.png) no-repeat left;
+	background-size: contain;
+	float: right;
+}
+#div_canvas_2 {
+	margin-left: 13.5%;
+	float: left;
+}
+#div_canvas_3 {
+	float: left;
+	/*margin-left: 2.5%;*/
+}
+#div_canvas_4 {
+	/*margin-right: 10%;*/
+	float: left;
+}
+
+#boton_deslizante img {
+	/*height: 2%;*/
+	width: 1%;
+}
+
+#streaming {
+	display: none;
+}
+
+video {
+	/*height: 100%;
+	width: 100%;*/
+}
+
+/* TMP - Borrar */
+div {
+	/*border: 1px solid blue; /**/
+}
+#canvas_0, #canvas_1, #canvas_2, #canvas_3, #canvas_4 {
+	/*border: 1px solid red; /**/
+}
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1"/>
+	<meta charset="UTF-8">
+	
+	<title>DashBoard</title>
+	
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/style.css"/>
+
+	<script src="js/modernizr.js"></script>
+	<script src="js/prefixfree.js"></script>
+
+	<script src="lib/ConstructorXMLHttpRequest.js"></script>
+	<script src="lib/Grafica.js"></script>
+</head>
+
+<!-- RESPONSIVO WideScreen hasta 300x400 canvas -->
+
+<body onload="init();" > <!-- onresize="location.reload();"> -->
+	
+	<div id="menu">
+		<!--<div id="menu_informacion">-->
+			<!-- RESHENAR -->
+		<!--</div>-->
+		<div id="menu_configuracion" style="display: none">
+			<h1>Configuración</h1><br>
+			<table id="menu_table">
+				<tr>
+					<th><h2>Diagrama Izquierdo</h2></th>
+					<th><h2>Video</h2></th>
+					<th><h2>Diagrama Derecho</h2></th>
+				</tr>
+				<tr>
+				<td>
+				<table class="sub_menu_table">
+					<tr>
+						<th>Tipo</th>
+						<th>Escalar</th>
+					</tr>					
+					<tr>
+					<td class="columna_sub_table" onclick='cambiarTipo(0,0);'>Barra</td>
+					<td class="columna_sub_table" onclick='cambiarEscalar(0,0);'>Temperatura</td>
+					</tr>
+					<tr>
+					<td class="columna_sub_table" onclick='cambiarTipo(1,0);'>Torta</td>
+					<td class="columna_sub_table" onclick='cambiarEscalar(1,0);'>Corriente</td>
+					</tr>
+				</table>
+				</td>
+				<td>
+				<table class="sub_menu_table">
+					<tr>
+						<th>Video</th>
+					</tr>					
+					<tr>
+					<td class="columna_sub_table" onclick='conmutarVista();'>Mostrar/Esconder</td>
+					</tr>
+				</table>
+				</td>
+				<td>
+				<table class="sub_menu_table">	
+					<tr>
+						<th>Tipo</th>
+						<th>Escalar</th>
+					</tr>					
+					<tr>
+					<td class="columna_sub_table" onclick='cambiarTipo(0,1);'>Barra</td>
+					<td class="columna_sub_table" onclick='cambiarEscalar(0,1);'>Temperatura</td>
+					</tr>
+					<tr>
+					<td class="columna_sub_table" onclick='cambiarTipo(1,1);'>Torta</td>
+					<td class="columna_sub_table" onclick='cambiarEscalar(1,1);'>Corriente</td>
+					</tr>
+				</table>
+				</td>
+				</tr>
+			</table>
+		</div>
+		<div id="boton_deslizante" onclick="conmutarMenu();">
+			<img src="./img/slider-arrow.png">
+		</div>
+	</div>
+
+	<div id="contenedor">
+		<div id="visualizador">
+			<div id="div_canvas_0">
+				<canvas id="canvas_0" width="300" height="400">¡Canvas no está soportado!</canvas>
+			</div>
+			<div class="video-stream"> 
+				<img width="100%" id="streaming" src=":8080/?action=stream" alt="Kinect">
+				<img width="100%" id="crabot_image" src="./img/CRABOT.png" alt="CRABOT">
+			</div>
+			<div id="div_canvas_1">
+				<canvas id="canvas_1" width="300" height="400">¡Canvas no está soportado!</canvas>
+			</div>
+		</div>
+		<div id="controlador">
+			<div id="div_canvas_2">
+				<canvas id="canvas_2" width="250" height="250">¡Canvas no está soportado!</canvas>
+			</div>
+			<div id="div_canvas_3">
+				<canvas id="canvas_3" width="400" height="250">¡Canvas no está soportado!</canvas>
+			</div>
+			<div id="div_canvas_4">
+				<canvas id="canvas_4" width="250" height="250">¡Canvas no está soportado!</canvas>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+<!-- width="70%" height="20%" -->

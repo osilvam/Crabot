@@ -1,0 +1,22 @@
+{	
+	"nombre" : "CRABOT",
+	"autores" : [ 
+				"Oscar Silva", 
+				"Yen-kung Yu", 
+				"Tenison",
+				"Andrés"
+				],
+	"numPatas" : 6,
+	"numArticulaciones" : 4, 
+	"grafico" : [ 
+				{"titulo" : "Temperatura",	"valorMax" : 90,	"valorMin" : 0,	"unidad" : "ºC"}, 
+				{"titulo" : "Corriente",	"valorMax" : 10,	"valorMin" : 0,	"unidad" : "A"}
+				],
+	"control" : [
+				{"titulo" : "Mover",	"idAccion" : "C", 	"magnitud" : 0, "idGradosLibertad" : 0},
+				{"titulo" : "Nivelar",	"idAccion" : "A",	"magnitud" : 1, "idGradosLibertad" : 1},
+				{"titulo" : "Girar",	"idAccion" : "G",	"magnitud" : 0, "idGradosLibertad" : 2},
+				{"titulo" : "Inclinar",	"idAccion" : "I",	"magnitud" : 1, "idGradosLibertad" : 0},
+				{"titulo" : "Kinect",	"idAccion" : "K",	"magnitud" : 0, "idGradosLibertad" : 0}
+				]
+}
